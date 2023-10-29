@@ -14,9 +14,7 @@ import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by LaunchCode
- */
+
 public class JobData {
 
     private static final String DATA_FILE = "job_data.csv";
@@ -59,7 +57,7 @@ public class JobData {
 
         ArrayList<Job> jobs = new ArrayList<>();
 
-        if (value.toLowerCase().equals("all")){
+        if (value.equalsIgnoreCase("all")){
             return findAll();
         }
 
@@ -231,5 +229,3 @@ public class JobData {
     }
 
 }
-
-
